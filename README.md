@@ -6,6 +6,12 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![React](https://img.shields.io/badge/React-18+-61DAFB)
 
+
+
+https://github.com/user-attachments/assets/11e29077-a7e6-4832-8b25-c6948ae53145
+
+
+
 ## 🎯 Business Context
 
 Built this system while working full-time at one of Google's largest real estate advertising clients in India. The company was spending **₹1-2 Crore monthly** on Google Ads with severely broken tracking systems.
@@ -71,7 +77,7 @@ When I joined, the company had:
 | **Cost Per Lead** | ₹10,200 | ₹7,850 | ↓ 23% |
 | **Junk Lead %** | 32% | 11% | ↓ 65% |
 | **Monthly Waste** | ₹35L | ₹12L | **₹23L saved/month** |
-| **Time to Identify Bad Campaign** | 18-22 days | 2 days | ↓ 90% |
+| **Time to Identify Bad Campaign** | 5-7 days | 2 days | ↓ 70% |
 | **Lead-to-Site-Visit Rate** | 12% | 19% | ↑ 58% |
 
 **Annual Savings**: ~₹2.7 Crore from waste elimination and CPL reduction
@@ -124,37 +130,6 @@ When I joined, the company had:
 **Integrations**: Google Ads API, Salesforce API  
 **Deployment**: AWS (EC2 + RDS)
 
-## 🚀 Quick Start
-```bash
-# Backend
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python -m data.seed_database  # Generates dummy data
-uvicorn main:app --reload
-
-# Frontend  
-cd frontend
-npm install
-npm run dev
-```
-
-**Access**: http://localhost:5173  
-**API Docs**: http://localhost:8000/docs
-
-## 📁 Project Structure
-```
-├── frontend/          # React dashboard
-│   ├── components/    # UI components
-│   ├── pages/         # Dashboard, Leads, Campaigns, Analytics
-│   └── lib/           # API client, utilities
-├── backend/           # FastAPI server
-│   ├── routes/        # API endpoints
-│   ├── services/      # Business logic (fraud detection, attribution)
-│   ├── models/        # Data models
-│   └── data/          # Dummy data generators
-```
 
 ## 💡 Lessons Learned
 
@@ -168,25 +143,4 @@ npm run dev
 
 **5. Speed Matters**: Real-time data turned a 3-week decision cycle into 2 days. Competitive advantage in ad buying.
 
-## 🔮 Future Enhancements
 
-- [ ] ML-based lead scoring (predict booking likelihood)
-- [ ] Automated budget reallocation based on performance
-- [ ] WhatsApp/SMS integration for lead follow-up tracking
-- [ ] Competitor ad monitoring and alerts
-- [ ] Predictive analytics for sales pipeline
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) for details
-
----
-
-**Built to solve real problems at scale.**  
-When ₹1-2 Cr is on the line every month, systems can't be broken.
-
-💼 **Built by**: [Your Name]  
-📧 **Contact**: your.email@example.com  
-🔗 **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
-
-⭐ **Star this repo if you're tackling similar ad spend optimization challenges**
